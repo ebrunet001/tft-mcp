@@ -2,7 +2,7 @@
 
 > Connect AI assistants to TFT data via MCP — player profiles, ranked stats, match history, composition analysis, augment optimization, and AI-powered coaching.
 
-[![Run on Apify](https://img.shields.io/badge/Run%20on-Apify-blue)](https://apify.com/mrbridge/teamfight-tactics-mcp-server---ai-game-analysis?fpr=ebrunet001)
+**[Try it on Apify Store](https://apify.com/mrbridge/teamfight-tactics-mcp-server---ai-game-analysis?fpr=ebrunet001)** | Pay-per-event | Free tier available
 
 ## Features
 
@@ -18,23 +18,21 @@
 
 ## Quick Start
 
-Connect to the MCP server using the Streamable HTTP endpoint:
+1. **[Open the Actor on Apify](https://apify.com/mrbridge/teamfight-tactics-mcp-server---ai-game-analysis?fpr=ebrunet001)** and get your free API token
+2. Connect your AI client using the MCP endpoint below
+3. Start asking about any TFT player, match, or composition
+
+### Claude Desktop
+
+Go to **Settings → MCP Servers → Add Custom Connector** and paste:
 
 ```
 https://mrbridge--teamfight-tactics-mcp-server---ai-game-analysis.apify.actor/mcp?token=YOUR_APIFY_TOKEN
 ```
 
-1. [Get your free Apify API token](https://console.apify.com/account/integrations?fpr=ebrunet001)
-2. Add the URL above as a custom MCP connector in your AI client
-3. Start asking about any TFT player, match, or composition
+### Claude Code
 
-### Claude Desktop Setup
-
-Go to **Settings → MCP Servers → Add Custom Connector** and paste the URL above (replace `YOUR_APIFY_TOKEN` with your actual token).
-
-### Claude Code Setup
-
-Run `/permissions` and add `mcp__TFT__*` to the Allow list to permanently allow all TFT tools.
+Add the endpoint above to your MCP settings, then run `/permissions` and add `mcp__TFT__*` to the Allow list.
 
 ## Example Prompts
 
